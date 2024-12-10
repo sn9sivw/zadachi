@@ -40,3 +40,4 @@ try:
     print(s + k)
 except NameError as e:
     print(e)
+    
