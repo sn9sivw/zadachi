@@ -1,9 +1,12 @@
-a = int(input("Введите a: "))
-b = int(input("Введите b: "))
-c = int(input("Введите c: "))
+a = int(input("Введите первое число: "))
+b = int(input("Введите второе число: "))
+c = int(input("Введите третье число: "))
 
-b, a, c = c, b, a
-print(f"а) a = {a}, b = {b}, c = {c}")
+# а)
+print(f"До обмена: {a}, {b}, {c}")
+a, b, c = b, c, a
+print(f"Первый обмен: {a}, {b}, {c}")
 
-b, c, a = a, b, c
-print(f"б) a = {a}, b = {b}, c = {c}")
+# б)
+a, b, c = c, a, b
+print(f"Второй обмен: {a}, {b}, {c}")
